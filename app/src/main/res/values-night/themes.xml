@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LibraryApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Βασικά Χρώματα -->
+        <item name="colorPrimary">#8AB4F8</item>
+        <item name="colorPrimaryVariant">#1A4B8E</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">#A5D6A7</item>
+        <item name="colorSecondaryVariant">#0D2D10</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Χρώματα Επιφανειών -->
+        <item name="android:windowBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorError">#CF6679</item>
+        <item name="colorOnError">#000000</item>
+
+        <!-- Κρίσιμα Attributes για το NavigationView -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B0B0B0</item>
+        <item name="android:textColorPrimaryDisableOnly">#757575</item>
+        <item name="colorControlNormal">#B0B0B0</item>
+        <item name="colorControlActivated">#8AB4F8</item>
+
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+</resources>

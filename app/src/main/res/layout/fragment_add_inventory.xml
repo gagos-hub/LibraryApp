@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Το διακοσμητικό φόντο στο πάνω μέρος - Χρησιμοποιούμε primary για να προσαρμόζεται -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="?attr/colorPrimary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Διαχείριση Αποθέματος"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Συνδέστε βιβλία με υποκαταστήματα"
+                android:textColor="#E8F0FE"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Dropdown Βιβλίων -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:hint="Επιλέξτε Βιβλίο"
+                        app:startIconDrawable="@drawable/ic_books"
+                        app:startIconTint="?attr/colorPrimary"
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        app:hintTextColor="?attr/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spinnerBooks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="?android:attr/textColorPrimary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Dropdown Υποκαταστημάτων -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:hint="Υποκατάστημα"
+                        app:startIconDrawable="@android:drawable/ic_dialog_map"
+                        app:startIconTint="?attr/colorPrimary"
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        app:hintTextColor="?attr/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spinnerBranches"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="?android:attr/textColorPrimary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Ποσότητα -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:hint="Ποσότητα (Τεμάχια)"
+                        app:startIconDrawable="@android:drawable/ic_input_add"
+                        app:startIconTint="?attr/colorPrimary"
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        app:hintTextColor="?attr/colorPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:textColor="?android:attr/textColorPrimary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSaveInventory"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="ΕΝΗΜΕΡΩΣΗ ΑΠΟΘΕΜΑΤΟΣ"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="16dp"
+                        android:backgroundTint="?attr/colorPrimary"
+                        app:icon="@android:drawable/ic_menu_save"
+                        app:iconGravity="textStart"
+                        android:textColor="@color/white"
+                        app:iconTint="@color/white"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

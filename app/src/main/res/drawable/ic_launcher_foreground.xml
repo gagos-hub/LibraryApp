@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright (C) 2026 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="90dp"
+    android:viewportWidth="90"
+    android:viewportHeight="90">
+  <path
+      android:pathData="m45,0a45,45 0,0 0,-45 45,45 45,0 0,0 45,45 45,45 0,0 0,45 -45,45 45,0 0,0 -45,-45zM45,14 L45,14c12.426,0 22.5,10.074 22.5,22.5 -0.01,4.02 -1.094,7.965 -3.145,11.424 -6.45,-1.74 -13,-1.461 -19.402,0.885 -3.337,-1.217 -6.711,-1.967 -10.1,-2.066 -0.39,-0.014 -0.782,-0.014 -1.172,-0.014 -2.696,0.026 -5.388,0.42 -8.061,1.158 -2.036,-3.45 -3.111,-7.383 -3.121,-11.389 0,-12.426 10.074,-22.5 22.5,-22.5zM36.818,37.182c-1.506,0 -2.727,1.222 -2.727,2.728 0,1.506 1.22,2.727 2.727,2.727 1.506,0 2.727,-1.22 2.727,-2.727 0,-1.506 -1.22,-2.728 -2.727,-2.728zM53.182,37.182c-1.506,0 -2.727,1.222 -2.727,2.728 0,1.506 1.22,2.727 2.727,2.727 1.506,0 2.727,-1.22 2.727,-2.727 0,-1.506 -1.22,-2.728 -2.727,-2.728zM34.234,49.457c0.355,0 0.707,-0 1.063,0.01 2.787,0.082 5.571,0.621 8.34,1.551l0,20.982 -17.096,0c1.346,-1.498 2.086,-3.439 2.096,-5.453 0,-4.518 -3.663,-8.275 -8.182,-8.275 -0.93,0 -1.853,0.166 -2.728,0.479l0,-3.447c0.001,-0.46 0.244,-0.886 0.641,-1.119 5.234,-3.08 10.545,-4.676 15.867,-4.727zM54.986,49.494c5.576,-0.107 11.159,1.46 16.646,4.689 0.396,0.233 0.64,0.659 0.641,1.119l0,3.447c-0.875,-0.313 -1.799,-0.479 -2.728,-0.479 -4.519,0 -8.182,3.757 -8.182,8.275 0,2.014 0.749,3.955 2.096,5.453l-17.096,0 0,-20.992c2.863,-0.95 5.743,-1.459 8.623,-1.514zM20.455,61.092c3.013,0 5.453,2.443 5.453,5.455 0,3.012 -2.441,5.453 -5.453,5.453 -3.013,0 -5.455,-2.441 -5.455,-5.453 0,-3.013 2.443,-5.455 5.455,-5.455zM69.545,61.092c3.013,0 5.455,2.443 5.455,5.455 0,3.012 -2.443,5.453 -5.455,5.453 -3.013,0 -5.453,-2.441 -5.453,-5.453 0,-3.013 2.441,-5.455 5.453,-5.455z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="8"
+      android:fillColor="#5c8ece"
+      android:strokeColor="#00000000"
+      android:strokeLineCap="butt"/>
+</vector>

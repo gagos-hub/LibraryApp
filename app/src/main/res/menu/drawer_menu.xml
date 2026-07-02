@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/ic_books"
+            android:title="Βιβλία" />
+        <item
+            android:id="@+id/nav_branches"
+            android:icon="@drawable/ic_store"
+            android:title="Υποκαταστήματα" />
+        <item
+            android:id="@+id/nav_loans"
+            android:icon="@drawable/ic_loans"
+            android:title="Δανεισμοί (Cloud)" />
+
+        <item
+            android:id="@+id/addInventoryFragment"
+            android:icon="@drawable/ic_inventory"
+            android:title="Νέο Απόθεμα" />
+        <item
+        android:id="@+id/nav_inventory_list"
+        android:icon="@drawable/ic_menu_inventory"
+        android:title="Αναφορά Αποθέματος" />
+        <item
+            android:id="@+id/nav_logs"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Ιστορικό (Logs)" />
+        <item
+            android:id="@+id/nav_theme_toggle"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Theme" />
+
+
+
+
+    </group>
+</menu>

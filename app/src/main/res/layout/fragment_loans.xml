@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Το μπλε background του header -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Δανεισμοί"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Παρακολούθηση ενεργών δανεισμών"
+            android:textColor="#E8F0FE"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0.9"/>
+
+        <!-- Η κύρια κάρτα της λίστας -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="?attr/colorSurface">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewLoans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:padding="8dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarLoans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:indeterminateTint="?attr/colorPrimary" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:text="Νέος Δανεισμός"
+        android:textColor="@color/white"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconTint="@color/white"
+        app:backgroundTint="?attr/colorSecondary" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

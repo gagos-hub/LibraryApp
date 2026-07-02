@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_books">
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="com.example.libraryapp.ui.books.BooksFragment"
+        android:label="Βιβλία"
+        tools:layout="@layout/fragment_books" />
+
+    <fragment
+        android:id="@+id/nav_branches"
+        android:name="com.example.libraryapp.ui.books.BranchesFragment"
+        android:label="Υποκαταστήματα"
+        tools:layout="@layout/fragment_branches" />
+
+    <fragment
+        android:id="@+id/nav_loans"
+        android:name="com.example.libraryapp.ui.books.LoansFragment"
+        android:label="Δανεισμοί (Cloud)"
+        tools:layout="@layout/fragment_loans" />
+    <fragment
+        android:id="@+id/addInventoryFragment"
+        android:name="com.example.libraryapp.ui.AddInventoryFragment"
+        android:label="Διαχείριση Αποθέματος" />
+    <fragment
+        android:id="@+id/nav_inventory_list"
+        android:name="com.example.libraryapp.ui.books.InventoryReportFragment"
+        android:label="Αναφορά Αποθέματος"
+        tools:layout="@layout/fragment_inventory_list" />
+    <fragment
+        android:id="@+id/nav_logs"
+        android:name="com.example.libraryapp.ui.logs.LogListFragment"
+        android:label="Ιστορικό Ενεργειών"
+        tools:layout="@layout/fragment_logs" />
+
+
+</navigation>

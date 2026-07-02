@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Το μπλε header που προσαρμόζεται στο Primary χρώμα -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Βιβλιοθήκη"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalBooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Σύνολο βιβλίων: 0"
+            android:textColor="#E8F0FE"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Η κάρτα αναζήτησης προσαρμόζεται στο Surface χρώμα -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etSearchBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Αναζήτηση βάσει τίτλου..."
+                android:padding="12dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="8dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHint="?android:attr/textColorSecondary"
+                android:drawableTint="?android:attr/textColorSecondary"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="Νέο Βιβλίο"
+        android:textColor="@android:color/white"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="?attr/colorSecondary" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
